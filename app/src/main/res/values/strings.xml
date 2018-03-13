@@ -1,0 +1,22 @@
+<resources>
+    <!--App and Activities' names-->
+    <string name="app_name">Yes Mom</string>
+    <string name="title_new_task">Add new task</string>
+    <string name="action_settings">Settings</string>
+
+    <!--Actions-->
+    <string name="add_task_button">Add Task</string>
+    <string name="action_save">Save</string>
+
+    <!--Hints-->
+    <string name="hint_task_name">Task Name</string>
+    <string name="hint_task_desc">Description</string>
+
+    <!--Database-->
+    <string name="db_opened">Successfully opened database</string>
+    <string name="db_error">An error has occurred with the Database</string>
+    <string name="db_table_created">Table has been created</string>
+
+    <!--Notification messages-->
+    <string name="hun_title">You still have some chores left</string>
+</resources>

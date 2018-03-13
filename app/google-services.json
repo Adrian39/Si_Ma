@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "647198716286",
+    "firebase_url": "https://yes-mom.firebaseio.com",
+    "project_id": "yes-mom",
+    "storage_bucket": "yes-mom.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:647198716286:android:f9f29170c29cb57a",
+        "android_client_info": {
+          "package_name": "com.example.ezloop.yesmom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "647198716286-cg82r1uf2gouajtp9f605ca40pfedbiq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_qMTweADSkvVjXTilYGUrBPS2keERsHI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
