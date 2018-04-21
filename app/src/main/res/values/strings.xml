@@ -18,5 +18,14 @@
     <string name="db_table_created">Table has been created</string>
 
     <!--Notification messages-->
-    <string name="hun_title">You still have some chores left</string>
+    <string name="hun_title">Don\'t make me bring the chancla</string>
+    <string name="hun_text">You still have some chores left</string>
+
+    <!--Navigation-->
+    <string name="nv_pending">Pending</string>
+    <string name="nv_completed">Completed</string>
+
+    <!--Notification channel settings-->
+    <string name="nc_name">Reminders</string>
+    <string name="nc_description">Test description</string>
 </resources>

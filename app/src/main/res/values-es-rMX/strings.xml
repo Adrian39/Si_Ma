@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--App and Activities' names-->
+    <string name="app_name">Si ma</string>
+    <string name="title_new_task">Agregar tarea nueva</string>
+    <string name="action_settings">Ajustes</string>
+
+    <!--Actions-->
+    <string name="add_task_button">Agregar Tarea</string>
+    <string name="action_save">Guardar</string>
+
+    <!--Hints-->
+    <string name="hint_task_name">Nombre de la tarea</string>
+    <string name="hint_task_desc">Descripción</string>
+
+    <!--Database-->
+    <string name="db_opened">Se ha abierto la base de datos correctamente</string>
+    <string name="db_error">Ocurrio un error con la base de datos</string>
+    <string name="db_table_created">La tabla ha sido creada</string>
+
+    <!--Notification messages-->
+    <string name="hun_title">No me hagas traer la chancla</string>
+    <string name="hun_text">Aun tienes deberes pendientes</string>
+
+    <!--Navigation-->
+    <string name="nv_pending">Pendientes</string>
+    <string name="nv_completed">Completados</string>
+
+    <!--Notification channel settings-->
+    <string name="nc_name">Recordatorios</string>
+    <string name="nc_description">Test description</string>
+</resources>

@@ -24,7 +24,7 @@ public class DBAdapter {
     public void openDB(){
         SQLiteDatabase db = dbHelper.getWritableDatabase();
         if (db.isOpen()) {
-            Toast.makeText(mContext, mContext.getResources().getString(R.string.db_opened), Toast.LENGTH_SHORT).show();
+            //Toast.makeText(mContext, mContext.getResources().getString(R.string.db_opened), Toast.LENGTH_SHORT).show();
         } else {
             dbHelper.getWritableDatabase();
         }
