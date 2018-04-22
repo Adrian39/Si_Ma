@@ -8,11 +8,7 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import com.example.ezloop.yesmom.SQLite.DBAdapter;
-
-import java.sql.SQLException;
 import java.util.ArrayList;
 
 /**

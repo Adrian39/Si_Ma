@@ -74,6 +74,22 @@ public class DBAdapter {
         return cursor;
     }
 
+    //QUERY COMPLETED TASKS
+    public Cursor getCompletedTasks(){
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+        Cursor cursor = null;
+        String query = "SELECT * FROM " + DBHelper.TABLE_1_NAME +
+                " WHERE " + DBHelper.T1_COMP + " = 1;";
+        try {
+            cursor = db.rawQuery(query, null);
+        } catch (SQLException e){
+            Toast.makeText(mContext,
+                    mContext.getResources().getString(R.string.db_error),
+                    Toast.LENGTH_SHORT).show();
+        }
+        return cursor;
+    }
+
     //UPDATE
     public void setCompleted(long id) {
         SQLiteDatabase db = dbHelper.getWritableDatabase();

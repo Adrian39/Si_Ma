@@ -1,12 +1,10 @@
 package com.example.ezloop.yesmom;
 
 import android.app.AlarmManager;
-import android.app.Notification;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.support.annotation.NonNull;
@@ -23,7 +21,6 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import com.example.ezloop.yesmom.BroadcastReceivers.NotificationReceiver;
 import com.example.ezloop.yesmom.Dialogs.AddTaskDialogFragment;
@@ -76,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                item.setChecked(false);
+                item.setChecked(true);
                 if (item.getItemId() == R.id.nav_pending){
                     Intent pendingIntent = new Intent(MainActivity.this, MainActivity.class);
                     startActivity(pendingIntent);
@@ -89,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        if (mTaskList.size() != 0){
+        if (mTaskList.size() > 0){
             setAlarm();
         }
 
@@ -173,7 +170,7 @@ public class MainActivity extends AppCompatActivity {
         pendingIntent = PendingIntent.getBroadcast(this, 100, mIntent, 0);
         manager.setRepeating(AlarmManager.RTC_WAKEUP,
                 SystemClock.elapsedRealtime() + 3600000,
-                60000,
+                3600000,
                 pendingIntent);
 
     }

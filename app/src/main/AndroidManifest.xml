@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ezloop.yesmom">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
 
     <application
         android:allowBackup="true"
@@ -22,7 +22,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <receiver android:name=".BroadcastReceivers.NotificationReceiver" android:enabled="true"/>
+
+        <receiver
+            android:name=".BroadcastReceivers.NotificationReceiver"
+            android:enabled="true" />
+
+        <activity android:name=".Activities.CompletedTasks"></activity>
     </application>
 
 </manifest>
